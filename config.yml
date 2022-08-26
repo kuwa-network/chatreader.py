@@ -1,0 +1,80 @@
+token: 
+bot_id: 865517105118183434
+bot:
+  log_channel: ミニくわ
+  ready_message: 起動しました！
+  stop_message: 停止しました
+  reload_message: 再起動しました！
+
+status: #ステータスタイプは"game""watching""streaming""listening" status_url:は"streaming"の時のみ
+  time: 5 #ステータスの切り替え時間
+  1:
+    status_message: 発言
+    status_type: listening
+    status_url: 
+  2:
+    status_message: "!!cr help"
+    status_type: watching
+    status_url: 
+  3:
+    status_message: チャット
+    status_type: streaming
+    status_url: https://kuwa.cf
+  
+command:
+  1:
+    prefix: '!!twitter'
+    message: 'https://kuwa.cf/tw'
+    typing_time_1: 1
+    typing_time_2: 2
+
+help:
+  title: Chat Reader Help
+  1:
+    name: '```!!cr set```'
+    value: 'チャット読み上げチャンネルに設定します'
+    inline: False
+  2:
+    name: '```!!cr stop```'
+    value: 'チャット読み上げを終了します'
+    inline: False
+  3:
+    name: '```!!cr r add <置き換える単語> <置き換え後>```'
+    value: '各サーバーでの単語の読み上げ方を教育できます'
+    inline: False
+  4:
+    name: '```!!cr r remove <消去する単語>```'
+    value: '教育した読み方を消去します'
+    inline: False
+  5:
+    name: '```!!cr r list```'
+    value: '教育した読み方の一覧を表示します'
+    inline: False
+  6:
+    name: '強制移動'
+    value: '通話の移動をすることで強制的に移動することが可能です！チャンネルは変わりません'
+    inline: True
+  7:
+    name: '強制切断'
+    value: '通話からキックすることで強制的に読み上げを終了できます！'
+    inline: True
+  8:
+    name: 'サポート'
+    value: '追加してほしい機能等あれば くわのDMに！'
+    inline: False
+  9:
+    name: 'Twitter'
+    value: 'https://kuwa.cf/tw'
+    inline: True
+  10:
+    name: 'CRBOT1招待URL'
+    value: 'https://discord.com/api/oauth2/authorize?client_id=865517105118183434&permissions=8&scope=bot'
+    inline: False
+  11:
+    name: 'CRBOT2招待URL'
+    value: 'https://discord.com/api/oauth2/authorize?client_id=866040726102343695&permissions=8&scope=bot'
+    inline: False
+  12:
+    name: 'CRBOT3招待URL'
+    value: 'https://discord.com/api/oauth2/authorize?client_id=886882498221596693&permissions=0&scope=bot'
+    inline: False
